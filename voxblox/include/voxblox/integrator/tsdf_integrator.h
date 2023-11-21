@@ -95,6 +95,9 @@ class TsdfIntegratorBase {
     return config_;
   }
 
+  /// Returns a CONST ref to the current layer
+  const Layer<TsdfVoxel>* getLayer() const { return layer_; }
+
   void setLayer(Layer<TsdfVoxel>* layer);
 
  protected:
